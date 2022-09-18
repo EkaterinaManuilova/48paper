@@ -7,6 +7,7 @@
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
+  background-color: #f7f7f7;
 }
 .header {
   margin: 0 auto;
@@ -90,7 +91,7 @@
   justify-content: space-between;
   max-width: 1278px;
 }
-.logo { 
+.logo {
   width: 90px;
   height: 72px;
   background-image: url("../images/logo_48.svg");
@@ -240,7 +241,7 @@
   padding: 10px 0 10px 0;
 }
 .search-form__input::placeholder {
-    color: #97c7e8;
+  color: #97c7e8;
 }
 .search-form__submit {
   background-color: transparent;
@@ -261,4 +262,95 @@
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: #ccdeeb;
+}
+
+.footer {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 0 53px;
+  box-sizing: border-box;
+}
+.footer__container {
+  padding: 53px 108px 59px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  column-gap: 7px;
+}
+.footer__left-block {
+  width: 302px;
+}
+.footer__logo {
+  margin-bottom: 119px;
+}
+.social {
+  display: flex;
+  column-gap: 17px;
+  margin-bottom: 231px;
+}
+.social__vk {
+  background-image: url("../images/vk.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 28px;
+  height: 16px;
+}
+.social__inst {
+  background-image: url("../images/inst.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 20px;
+  height: 20px;
+}
+.social__wapp {
+  background-image: url("../images/wapp.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 21px;
+  height: 21px;
+}
+.statistic {
+  margin-bottom: 149px;
+  background-image: url("../images/stat.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 88px;
+  height: 31px;
+}
+.copyright__text {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 23px;
+  color: #e0e0e0;
+}
+.footer__persdata {
+  padding: 0;
+  margin: 0 0 30px 0;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 19px;
+  color: #e0e0e0;
+}
+.footer__cookies {
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 23px;
+  display: flex;
+  align-items: center;
+
+  color: #e0e0e0;
 }
