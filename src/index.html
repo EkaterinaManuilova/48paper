@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="./styles/index.css" />
+    <script defer src="./scripts/index.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>48paper</title>
   </head>
@@ -150,17 +151,43 @@
                 <div class="footer__top-block">
                     <div class="info">
                         <address class="footer__contacts">
-                            <p class="footer__contacts-text">
-                              Владивосток, ул. Снеговая&nbsp;4
-                            </p>
-                            <p class="footer__contacts-text">
-                              с&nbsp;9&nbsp;до&nbsp;18&nbsp;/ Пн.&mdash;Пт.
-                            </p>
-                            <p class="footer__contacts-text">8 (423) 278-07-01</p>
-                            <p class="footer__contacts-text">8 (423) 269-07-01</p>
+                            <div class="footer__contacts-info">
+                                <p class="footer__contacts-info-text">
+                                    Владивосток, ул. Снеговая&nbsp;4
+                                  </p>
+                                  <p class="footer__contacts-info-text">
+                                    с&nbsp;9&nbsp;до&nbsp;18&nbsp;/ Пн.&mdash;Пт.
+                                  </p>
+                            </div>
+                            <div class="footer__contacts-phones">
+                                <p class="footer__contacts-phones-text">8 (423) 278-07-01</p>
+                                <p class="footer__contacts-phones-text">8 (423) 269-07-01</p>
+                            </div>
                           </address>
                           <div class="subscribe">
-                            <h2 class="subscribe__titile">Рассылка</h2>
+                              <div class="subscribe__conteiner">
+                                <h2 class="subscribe__title">Рассылка</h2>
+                                <form class="subscribe-form" novalidate>
+                                    <label>
+                                        <span class="subscribe-form__input-title">Ваша электронная почта</span>
+                                        <span class="visually-hidden">Ваша электронная почта</span>
+                                        <input
+                                          type="email"
+                                          id="mail"
+                                          name="mail"
+                                          class="subscribe-form__input"
+                                          minlength="8"
+                                          maxlength="100"
+                                          required
+                                        />
+                                        <span class="subscribe-form__input-error" aria-live="polite"></span>
+                                      </label>
+                                      <button type="submit" class="subscribe-form__button">
+                                        Подписаться
+                                        <span class="visually-hidden">Подписаться</span>
+                                      </button>
+                                </form>
+                              </div>
                           </div>
                     </div>
                 </div>
