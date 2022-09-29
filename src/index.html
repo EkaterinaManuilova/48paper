@@ -25,7 +25,7 @@
             <div class="header__com-link-container">
               <div class="header__com-link-devider"></div>
               <div class="header__com-link-content">
-                <a href="48chasov.com" class="header__com-link-item"
+                <a href="http://www.48chasov.com/" class="header__com-link-item"
                   >перейти на&nbsp;48chasov.com</a
                 >
               </div>
@@ -257,7 +257,27 @@
             </ul>
           </nav>
         </div>
-        <div class="main-content"></div>
+        <div class="main-content">
+          <div class="main-banner-slider">
+            <div class="main-banner-slider__list">
+              <div>
+                <img src="images/screen.png">
+              </div>
+              <div class="main-banner-slider__item">
+                <img class="main-banner-slider__img" src="images/48banner.png">
+              </div>
+              <div class="main-banner-slider__item">
+                <img class="main-banner-slider__img" src="images/viniet.jpeg">
+              </div>
+              <div class="main-banner-slider__item">
+                <img class="main-banner-slider__img" src="images/card-backgr.jpeg">
+              </div>
+            </div>
+            <div class="main-banner-slider-arrow-prev"></div>
+            <div class="main-banner-slider-arrow-next"></div>
+            <div class="main-banner-slider-dots"></div>
+          </div>
+        </div>
       </div>
     </main>
 
@@ -460,5 +480,8 @@
         </div>
       </div>
     </footer>
+    <script src="./scripts/BannerSlider.js"></script>
+<!-- вызов слайдера -->
+<script>new BannerSlider()</script>
   </body>
 </html>
