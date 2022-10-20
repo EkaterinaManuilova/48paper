@@ -647,9 +647,7 @@ span.main-banner-dot {
 .footer__top-block {
   display: flex;
 }
-.catalog {
-  margin-right: 17px;
-}
+
 .catalog__title {
   padding: 10px 0;
   text-transform: uppercase;
@@ -664,24 +662,33 @@ span.main-banner-dot {
 }
 .catalog__columns {
   display: flex;
-  justify-content: space-between;
-}
-.catalog__column {
-  max-width: 195px;
+  max-height: 427px;
+  width: 410px;
 }
 .catalog-list {
   list-style: none;
   margin: 0;
   padding: 0;
+  column-count: 2;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-right: 18px;
 }
+.catalog-list  li{
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+
 .catalog-item {
+  max-width: 195px;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
-  line-height: 19px;
+  line-height: 18.75px;
   letter-spacing: 0.05em;
-  padding: 7px 0;
+  padding-bottom: 11px;
   color: #4f4f4f;
   box-sizing: border-box;
 }

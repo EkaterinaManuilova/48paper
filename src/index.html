@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="./styles/index.css" />
-    <script defer src="./scripts/index.js"></script>
+    <script type="module" src="./scripts/index.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>48paper</title>
   </head>
@@ -130,7 +130,7 @@
       <div class="main-container">
         <div class="left-menu">
           <h2 class="left-menu__title">Каталог<span class="left-menu__title-caption">2403</span></h2>
-          <nav class="left-menu__navbar">
+          <!-- <nav class="left-menu__navbar">
             <ul class="left-menu__navbar-list">
               <li class="left-menu__navbar-item">
                 <a href="#" class="left-menu__navbar-link-first-level">
@@ -255,7 +255,16 @@
                 </a>
               </li>
             </ul>
+          </nav> -->
+
+
+          <nav class="left-menu__navbar">
+            <ul class="left-menu__navbar-list">
+
+            </ul>
           </nav>
+
+
         </div>
         <div class="main-content">
           <div class="main-banner-slider">
@@ -285,7 +294,7 @@
       <h2 class="articles__title">Статьи</h2>
       <p class="aticles__subtitle">Полезные знания для вашего бизнеса</p>
       <div class="articles__content">
-        <article class="article">
+        <!-- <article class="article">
           <h3 class="article__title">Как выбрать биговщик</h3>
           <p class="article__text">
             Биговка — это продавливание тонкой бороздки на листе бумаги, чтобы
@@ -336,7 +345,7 @@
             бороздок на бумажные или картонные листы плотностью
           </p>
           <a href="#" class="article__link">Читать</a>
-        </article>
+        </article> -->
       </div>
     </section>
 
@@ -361,7 +370,7 @@
             <div class="catalog">
               <h2 class="catalog__title">Продукция</h2>
               <div class="catalog__columns">
-                <div class="catalog__column">
+          
                   <ul class="catalog-list">
                     <li class="catalog-item">Бейджи</li>
                     <li class="catalog-item">Бумага и картон</li>
@@ -373,10 +382,6 @@
                     <li class="catalog-item">Материалы для наружной рекламы</li>
                     <li class="catalog-item">Материалы для офсетной печати</li>
                     <li class="catalog-item">Материалы для переплета</li>
-                  </ul>
-                </div>
-                <div class="catalog__column">
-                  <ul class="catalog-list">
                     <li class="catalog-item">
                       Материалы для пигментной печати
                     </li>
@@ -392,7 +397,7 @@
                     <li class="catalog-item">Сувенирная продукция</li>
                     <li class="catalog-item">Футболки, толстовки, бейсболки</li>
                   </ul>
-                </div>
+            
               </div>
             </div>
             <div class="market">
@@ -483,5 +488,24 @@
     <script src="./scripts/BannerSlider.js"></script>
 <!-- вызов слайдера -->
 <script>new BannerSlider()</script>
+
+<template id="left-menu-item-template" class="left-menu-item-template">
+  <li class="left-menu__navbar-item">
+    <a class="left-menu__navbar-link-first-level">
+      <span class="menu-item-name"><span class="menu-item-count"></span></span>
+      <div class="menu-arrow"></div>
+    </a>
+  </li>
+</template>
+
+<template id="article-item-template" class="article-item-template">
+  <article class="article">
+    <h3 class="article__title"></h3>
+    <p class="article__text">
+    </p>
+    <a class="article__link">Читать</a>
+  </article>
+</template>
+
   </body>
 </html>
