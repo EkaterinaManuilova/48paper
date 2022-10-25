@@ -61,6 +61,19 @@
                 data-slide="next"
               ></button>
             </div>
+            <div class="content">
+              <div class="tabs">
+                <a href="#" class="tab">Специальные предложения</a>
+                <a href="#" class="tab">Новинки</a>
+                <a href="#" class="tab">48 Типография</a>
+              </div>
+              <section class="products">
+                <ul class="products__list">
+
+
+                </ul>
+              </section>
+            </div>
           </div>
         </div>
       </main>
@@ -160,6 +173,18 @@
           <p class="article__text"></p>
           <a class="article__link">Читать</a>
         </article>
+      </template>
+
+      <template id="product-template" class="product-template">
+        <li class="product__item">
+          <a class="product__item-link">
+            <img class="product__item-img" />
+            <h3 class="product__item-title"></h3>
+            <span class="product__item-price"></span>
+            <span class="product__item-old-price"></span>
+            <div class="product__item-discount"></div>
+          </a>
+        </li>
       </template>
 
       <script src="scripts/header.js"></script>

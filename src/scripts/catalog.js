@@ -136,7 +136,7 @@ const catalogItems = [
 ];
 
 const categoryContainer = document.querySelector(".category-catalog__list");
-//загрузка левого меню
+//загрузка каталога
 function loadCatalog(linkValue, nameValue, imageValue) {
   const categoryTemplate = document.querySelector(".category-template").content;
 

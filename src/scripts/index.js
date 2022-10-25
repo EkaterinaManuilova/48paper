@@ -402,3 +402,83 @@ function showLogError() {
   loginButton.classList.add("disabled");
   loginButton.setAttribute("disabled", true);
 }
+
+//переключение табов
+
+const tabs = document.querySelectorAll('.tab');
+let activeTab = document.querySelector('.tab_activated');
+
+for (let i = 0; i < tabs.length; i++) {
+    tabs[i].addEventListener('click',  function (e) {
+      const el = e.target
+       if (el != undefined) {
+        if (el.classList.contains('tab_activated')) {
+            el.classList.remove('tab_activated')
+        }else{
+            el.classList.add('tab_activated')
+        } 
+     }
+      });
+}
+
+const productItems = [
+  {
+    link: '#',
+  image: '/src/images/1.png',
+    name: 'Обрезчик углов BULROS С-004, R5',
+    price: '1 276 ₽',
+    oldprice: '1 576 ₽',
+    discount: '-12%'
+  },
+]
+
+//pfuheprf товаров на главной
+const productsContainer = document.querySelector(".products__list");
+
+function loadProducts(linkValue, nameValue, imageValue, priceValue, oldPriceValue, discountValue) {
+  const productTemplate = document.querySelector(".product-template").content;
+
+  const productElement = productTemplate
+    .querySelector(".product__item")
+    .cloneNode(true);
+
+  const productLink = productElement.querySelector(
+    ".product__item-link"
+  );
+  const productName = productElement.querySelector(
+    ".product__item-title"
+  );
+  const productImage = productElement.querySelector(
+    ".product__itemimg"
+  );
+  const productPrice = productElement.querySelector(
+    ".product__item-price"
+  );
+  const productOldPrice = productElement.querySelector(
+    ".product__item-old-price"
+  );
+  const productPDiscount = productElement.querySelector(
+    ".product__item-discount"
+  );
+
+  productLink.setAttribute("href", linkValue);
+  productName.textContent = nameValue;
+  productImage.setAttribute("src", imageValue);
+  productPrice.textContent = priceValue;
+  productOldPrice.textContent = oldPriceValue;
+  productPDiscount.textContent = discountValue;
+
+if (!oldprice) {
+    productOldPrice.removeAttribute("class", productOldPrice);
+  }
+
+  if (!discount) {
+    productDiscount.removeAttribute("class", productPDiscount);
+  }
+
+  productsContainer.append(productElement);
+}
+
+productItems.forEach((element) => {
+  loadProducts(element.link, element.name, element.image, element.price, element.oldprice, element.discount);
+});

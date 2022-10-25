@@ -146,6 +146,43 @@
   float: right;
 }
 
+.content {
+  margin-top: 51px;
+}
+.tab {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 22.78px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color:#4F4F4F;
+  text-decoration: none;
+  margin-right: 65px;
+  
+}
+.tab_activated {
+color: #C54936;
+position: relative;
+z-index: 1;
+
+}
+.tab_activated::after {
+content: '';
+width: 100%;
+height: 10px;
+background-color:  #FAEC4F;
+position: absolute;
+top: 15px;
+left: 0;
+z-index: -1;
+}
+
+.products {
+  margin-top: 29px;
+}
+
 .articles {
   padding: 56px 106px 42px;
   max-width: 1494px;
