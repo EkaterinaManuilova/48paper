@@ -4,7 +4,7 @@ const leftMenuItems = [
     name: "Бейджи",
     count: "14",
     submenu: "",
-    image: '/src/images/category.png',
+    image: "/src/images/category.png",
   },
   {
     link: "#",

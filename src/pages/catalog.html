@@ -1,50 +1,49 @@
 <!DOCTYPE html>
 <html lang="ru">
-    <head>
-        <meta charset="UTF-8" />
-        <link rel="stylesheet" href="/src/styles/index.css" />
-        <link rel="stylesheet" href="/src/styles/catalog.css" />
-        <script type="module" src="/src/scripts/index.js"></script>
-        <script type="module" src="/src/scripts/catalog.js"></script>
-        
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>48paper</title>
-      </head>
-<body class="page">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="/src/styles/index.css" />
+    <link rel="stylesheet" href="/src/styles/catalog.css" />
+    <script type="module" src="/src/scripts/index.js"></script>
+    <script type="module" src="/src/scripts/catalog.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>48paper</title>
+  </head>
 
-    <div class="catalog-head-wrapper">
+  <body class="page">
+    <div class="page-container">
+      <div class="catalog-head-wrapper">
         <div class="catalog-head">
-            <h1 class="product-catalog__title">Каталог</h1>
-            <div class="crumbs" id="crumbs">
-                <ul class="crumbs-list">
-                    <li class="crumbs-item"><a class="crumbs-item-link" href="/src/index.html">Главная</a></li>
-                    <li class="crumbs-item"><a class="crumbs-item-link" href="#">Каталог</a></li>
-                </ul>
-            </div>
-        </div>
-
-    </div>
-    <main class="main">
- 
-
-        <section class="category-catalog">
-            <ul class="category-catalog__list">
-
+          <h1 class="product-catalog__title">Каталог</h1>
+          <div class="crumbs" id="crumbs">
+            <ul class="crumbs-list">
+              <li class="crumbs-item">
+                <a class="crumbs-item-link" href="/src/index.html">Главная</a>
+              </li>
+              <li class="crumbs-item">
+                <a class="crumbs-item-link" href="#">Каталог</a>
+              </li>
             </ul>
+          </div>
+        </div>
+      </div>
+      <main class="main">
+        <section class="category-catalog">
+          <ul class="category-catalog__list"></ul>
         </section>
+      </main>
 
-    </main>
-
-    <template id="category-template" class="category-template">
+      <template id="category-template" class="category-template">
         <li class="category-catalog__item">
-            <a class="category-catalog__item-link">
-                <img class="category-catalog__item-img">
-                <h3 class="category-catalog__item-title"></h3>
-            </a>
+          <a class="category-catalog__item-link">
+            <img class="category-catalog__item-img" />
+            <h3 class="category-catalog__item-title"></h3>
+          </a>
         </li>
-    </template>
-    
-    <script src="/src/scripts/header.js"></script>
-    <script src="/src/scripts/footer.js"></script>
-</body>
+      </template>
+
+      <script src="/src/scripts/header.js"></script>
+      <script src="/src/scripts/footer.js"></script>
+    </div>   
+  </body>
 </html>
