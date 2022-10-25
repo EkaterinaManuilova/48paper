@@ -2,6 +2,7 @@
 @import url(../vendor/fonts/fonts.css);
 @import url(../styles/header.css);
 @import url(../styles/slider.css);
+@import url(../styles/products.css);
 @import url(../styles/footer.css);
 .page {
   font-family: "Roboto", "Raleway", "OpeSans", sans-serif;
@@ -35,7 +36,6 @@
   box-sizing: border-box;
   margin-top: 13px;
   display: flex;
-  column-gap: 18px;
   justify-content: space-between;
 }
 @media screen and (max-width: 1280px) {
@@ -45,7 +45,7 @@
 }
 .left-menu {
   max-width: 291px;
-  padding-right: 14px;
+  padding-left: 32px;
   padding-top: 28px;
   background-color: #f7f7f7;
   border-radius: 5px;
@@ -147,36 +147,39 @@
 }
 
 .content {
-  margin-top: 51px;
+  margin-top: 40px;
+}
+.tabs {
+  display: flex;
+  flex-wrap: wrap;
 }
 .tab {
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
   font-size: 22px;
   line-height: 22.78px;
   letter-spacing: 0.04em;
   text-transform: uppercase;
-  color:#4F4F4F;
+  color: #4f4f4f;
   text-decoration: none;
   margin-right: 65px;
-  
+  margin-top: 11px;
 }
 .tab_activated {
-color: #C54936;
-position: relative;
-z-index: 1;
-
+  color: #c54936;
+  position: relative;
+  z-index: 1;
 }
 .tab_activated::after {
-content: '';
-width: 100%;
-height: 10px;
-background-color:  #FAEC4F;
-position: absolute;
-top: 15px;
-left: 0;
-z-index: -1;
+  content: "";
+  width: 100%;
+  height: 10px;
+  background-color: #faec4f;
+  position: absolute;
+  top: 15px;
+  left: 0;
+  z-index: -1;
 }
 
 .products {

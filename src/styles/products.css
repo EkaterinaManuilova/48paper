@@ -1,0 +1,124 @@
+.products__list {
+  list-style: none;
+  margin-top: 50px;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 306px);
+  justify-content: space-around;
+  row-gap: 18px;
+}
+.product__item {
+  border-radius: 5px;
+  border: solid 1px #f7f7f7;
+  transition: all linear 0.3s;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.product__item:hover {
+  transform: translate(-15px, -15px);
+  border: solid 1px #faec4f;
+  box-sizing: border-box;
+  box-shadow: 13px 13px 0px 0px #faec4f;
+  transition: all linear 0.3s;
+}
+.product__item-link {
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 32px;
+  padding-bottom: 13px;
+  box-sizing: border-box;
+}
+.product__item-img {
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
+  object-position: center center;
+}
+.product__item-title {
+  max-width: 248px;
+  text-align: center;
+  font-family: "Raleway";
+  text-transform: uppercase;
+  font-size: 18px;
+  line-height: 21.13px;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  color: #c54936;
+  text-shadow: 3px 3px rgba(250, 236, 79, 0.5);
+  display: block;
+  word-wrap: break-word;
+}
+.product__item-price {
+  font-family: "Roboto";
+  text-transform: uppercase;
+  font-size: 20px;
+  line-height: 23.44px;
+  font-weight: 900;
+  letter-spacing: 0.1em;
+  color: #4f4f4f;
+}
+.product__item-old-price {
+  font-family: "Roboto";
+  text-transform: uppercase;
+  font-size: 12px;
+  line-height: 14.06px;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  color: #e0e0e0;
+  text-decoration: line-through;
+  margin-bottom: 10px;
+}
+.product__item-discount {
+  width: 45px;
+  height: 16px;
+  box-sizing: border-box;
+  border-radius: 8px;
+  background-color: #27ae60;
+  color: #ffffff;
+  font-family: "Roboto";
+  font-size: 12px;
+  line-height: 14.06px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-align: center;
+}
+.to-basket {
+  margin: 0 auto;
+  display: flex;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0.2s, opacity 0.2s linear;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 36px;
+  width: 176px;
+  height: 40px;
+  outline: none;
+  border: none;
+  background-color: #c54936;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-align: center;
+  border-radius: 29px;
+  box-sizing: border-box;
+  font-family: "Open Sans";
+  font-size: 16px;
+  line-height: 17.43px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+}
+.product__item:hover .to-basket {
+    visibility: visible;
+    opacity: 1;
+    transition: visibility 0.2s, opacity 0.2s linear;
+}
+.to-basket:hover {
+    cursor: pointer;
+    background: #de3398;
+    box-shadow: 5px 5px 0px rgba(250, 236, 79, 0.5);
+}

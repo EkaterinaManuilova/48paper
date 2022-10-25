@@ -405,59 +405,122 @@ function showLogError() {
 
 //переключение табов
 
-const tabs = document.querySelectorAll('.tab');
-let activeTab = document.querySelector('.tab_activated');
+const tabs = document.querySelectorAll(".tab");
+let activeTab = document.querySelector(".tab_activated");
 
 for (let i = 0; i < tabs.length; i++) {
-    tabs[i].addEventListener('click',  function (e) {
-      const el = e.target
-       if (el != undefined) {
-        if (el.classList.contains('tab_activated')) {
-            el.classList.remove('tab_activated')
-        }else{
-            el.classList.add('tab_activated')
-        } 
-     }
-      });
+  tabs[i].addEventListener("click", function (e) {
+    const el = e.target;
+    if (el != undefined) {
+      if (el.classList.contains("tab_activated")) {
+        el.classList.remove("tab_activated");
+      } else {
+        el.classList.add("tab_activated");
+      }
+    }
+  });
 }
 
 const productItems = [
   {
-    link: '#',
-  image: '/src/images/1.png',
-    name: 'Обрезчик углов BULROS С-004, R5',
-    price: '1 276 ₽',
-    oldprice: '1 576 ₽',
-    discount: '-12%'
+    link: "#",
+    image: "/src/images/1.png",
+    name: "Обрезчик углов BULROS С-004, R5",
+    price: "1 276 ₽",
+    oldprice: "1 576 ₽",
+    discount: "-12%",
   },
-]
+  {
+    link: "#",
+    image: "/src/images/2.png",
+    name: "Карточный принтер Datacard SD160, односторонний",
+    price: "54 850 ₽",
+    oldprice: "",
+    discount: "",
+  },
+  {
+    link: "#",
+    image: "/src/images/3.png",
+    name: "Datacard Simplex, 100 Input hopper",
+    price: "59 195 ₽",
+    oldprice: "",
+    discount: "",
+  },
+  {
+    link: "#",
+    image: "/src/images/4.png",
+    name: "Сверло для бумаги Nagel 9 мм",
+    price: "1 990 ₽",
+    oldprice: "",
+    discount: "",
+  },
+  {
+    link: "#",
+    image: "/src/images/5.png",
+    name: "Вырубщик отверстий BULROS A-101",
+    price: "679 ₽",
+    oldprice: "1 576 ₽",
+    discount: "-54%",
+  },
+  {
+    link: "#",
+    image: "/src/images/6.png",
+    name: "Вырубщик отверстий BULROS A-112",
+    price: "1 251 ₽",
+    oldprice: "",
+    discount: "",
+  },
+  {
+    link: "#",
+    image: "/src/images/7.png",
+    name: "Обрезчик углов BULROS С-004, R5",
+    price: "1 276 ₽",
+    oldprice: "1 576 ₽",
+    discount: "-12%",
+  },
+  {
+    link: "#",
+    image: "/src/images/8.png",
+    name: "Карточный принтер Datacard SD160, односторонний",
+    price: "54 850 ₽",
+    oldprice: "",
+    discount: "",
+  },
+  {
+    link: "#",
+    image: "/src/images/9.png",
+    name: "Datacard Simplex, 100 Input hopper",
+    price: "59 195 ₽",
+    oldprice: "",
+    discount: "",
+  },
+];
 
-//pfuheprf товаров на главной
+//загрузка товаров на главной
 const productsContainer = document.querySelector(".products__list");
 
-function loadProducts(linkValue, nameValue, imageValue, priceValue, oldPriceValue, discountValue) {
+function loadProducts(
+  linkValue,
+  nameValue,
+  imageValue,
+  priceValue,
+  oldPriceValue,
+  discountValue
+) {
   const productTemplate = document.querySelector(".product-template").content;
 
   const productElement = productTemplate
     .querySelector(".product__item")
     .cloneNode(true);
-
-  const productLink = productElement.querySelector(
-    ".product__item-link"
-  );
-  const productName = productElement.querySelector(
-    ".product__item-title"
-  );
-  const productImage = productElement.querySelector(
-    ".product__itemimg"
-  );
-  const productPrice = productElement.querySelector(
-    ".product__item-price"
-  );
+console.log(productElement)
+  const productLink = productElement.querySelector(".product__item-link");
+  const productName = productElement.querySelector(".product__item-title");
+  const productImage = productElement.querySelector(".product__item-img");
+  const productPrice = productElement.querySelector(".product__item-price");
   const productOldPrice = productElement.querySelector(
     ".product__item-old-price"
   );
-  const productPDiscount = productElement.querySelector(
+  const productDiscount = productElement.querySelector(
     ".product__item-discount"
   );
 
@@ -466,19 +529,26 @@ function loadProducts(linkValue, nameValue, imageValue, priceValue, oldPriceValu
   productImage.setAttribute("src", imageValue);
   productPrice.textContent = priceValue;
   productOldPrice.textContent = oldPriceValue;
-  productPDiscount.textContent = discountValue;
+  productDiscount.textContent = discountValue;
 
-if (!oldprice) {
+  if (!oldPriceValue) {
     productOldPrice.removeAttribute("class", productOldPrice);
   }
 
-  if (!discount) {
-    productDiscount.removeAttribute("class", productPDiscount);
+  if (!discountValue) {
+    productDiscount.removeAttribute("class", productDiscount);
   }
 
   productsContainer.append(productElement);
 }
 
 productItems.forEach((element) => {
-  loadProducts(element.link, element.name, element.image, element.price, element.oldprice, element.discount);
+  loadProducts(
+    element.link,
+    element.name,
+    element.image,
+    element.price,
+    element.oldprice,
+    element.discount
+  );
 });
