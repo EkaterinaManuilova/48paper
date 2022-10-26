@@ -21,7 +21,7 @@ const footerText = `
       <div class="footer__content">
         <div class="footer__top-block">
           <div class="catalog">
-            <a class="catalog-link" href="./src/pages/catalog.html">
+            <a class="catalog-link" href="././src/pages/catalog.html">
               <h2 class="catalog__title">Продукция</h2>
             </a>
 
