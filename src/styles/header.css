@@ -123,7 +123,7 @@
   display: block;
   width: 90px;
   height: 72px;
-  background-image: url("./src/images/logo_48.svg");
+  background-image: url("../images/logo_48.svg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -186,7 +186,7 @@
 }
 .burger-menu-icon {
   margin-right: 12px;
-  background-image: url(/src/images/burger-icon.svg);
+  background-image: url('../images/burger-icon.svg');
   width: 12px;
   height: 10px;
 }
@@ -276,7 +276,7 @@
   position: absolute;
   right: -1px;
   top: 0;
-  background-image: url(./src/images/basket.svg);
+  background-image: url('../images/basket.svg');
   width: 38px;
   height: 32px;
 }
@@ -305,7 +305,7 @@
   position: absolute;
   top: 7px;
   left: 5px;
-  background-image: url(./src/images/user.svg);
+  background-image: url('../images/user.svg');
   width: 24px;
   height: 27px;
 }
@@ -358,7 +358,7 @@
   color: #ccdeeb;
 }
 .search-form__submit-icon {
-  background-image: url(./src/images/search-icon.svg);
+  background-image: url('../images/search-icon.svg');
   width: 18px;
   height: 18px;
 }

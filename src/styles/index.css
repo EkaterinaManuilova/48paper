@@ -12,7 +12,7 @@
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
   background-color: #f7f7f7;
-  background-image: url("./src/images/pattern.svg");
+  background-image: url('../images/pattern.svg');
   background-repeat: repeat;
   background-size: 340px 361px;
   background-position: center center;
@@ -326,7 +326,7 @@
   width: 20px;
   height: 20px;
   position: absolute;
-  background-image: url(../images/close.svg);
+  background-image: url('../images/close.svg');
   border: 0;
   top: 14px;
   right: 14px;

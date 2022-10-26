@@ -48,7 +48,7 @@
     column-gap: 17px;
   }
   .social__vk {
-    background-image: url("../images/vk.svg");
+    background-image: url('../images/vk.svg');
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -56,7 +56,7 @@
     height: 16px;
   }
   .social__inst {
-    background-image: url("../images/inst.svg");
+    background-image: url('../images/inst.svg');
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -64,7 +64,7 @@
     height: 20px;
   }
   .social__wapp {
-    background-image: url("../images/wapp.svg");
+    background-image: url('../images/wapp.svg');
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -73,7 +73,7 @@
   }
   .statistic {
     margin-bottom: 149px;
-    background-image: url("../images/stat.svg");
+    background-image: url('../images/stat.svg');
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -263,7 +263,7 @@
     width: 306px;
     height: 283px;
     background-color: #f5f6f1;
-    background-image: url("../images/form-image.svg");
+    background-image: url('../images/form-image.svg');
     background-repeat: no-repeat;
     background-position: 0 245px;
   }
