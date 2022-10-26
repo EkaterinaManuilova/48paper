@@ -57,6 +57,7 @@
   transition: all linear 0.3s;
   cursor: pointer;
   box-shadow: 0 0 0 99999px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0 0 0 99999px rgba(0, 0, 0, 0.5);
 }
 .left-menu__title {
   font-family: "Raleway";

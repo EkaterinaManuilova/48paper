@@ -3,7 +3,10 @@
     font-style: normal;
     font-weight: 400;
     font-display: swap;
-    src: url(./Roboto-Regular.ttf) format("ttf");
+    src: url(./Roboto-Regular.ttf) format("ttf"),
+    url(./Roboto-Regular.eot) format("eot"),
+    url(./Roboto-Regular.woff) format("woff"),
+    url(./Roboto-Regular.woff2) format("woff2");
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     -webkit-text-size-adjust: 100%;
@@ -16,7 +19,10 @@
     font-style: normal;
     font-weight: 500;
     font-display: swap;
-    src: url(./Roboto-Medium.ttf) format("ttf");
+    src: url(./Roboto-Medium.ttf) format("ttf"),
+    url(./Roboto-Medium.eot) format("eot"),
+    url(./Roboto-Medium.woff) format("woff"),
+    url(./Roboto-Medium.woff2) format("woff2");
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     -webkit-text-size-adjust: 100%;
@@ -29,7 +35,10 @@
     font-style: normal;
     font-weight: 700;
     font-display: swap;
-    src: url(./Roboto-Bold.ttf) format("ttf");
+    src: url(./Roboto-Bold.ttf) format("ttf"),
+    url(./Roboto-Bold.eot) format("eot"),
+    url(./Roboto-Bold.woff) format("woff"),
+    url(./Roboto-Bold.woff2) format("woff2");
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     -webkit-text-size-adjust: 100%;
@@ -42,7 +51,10 @@
     font-style: normal;
     font-weight: 800;
     font-display: swap;
-    src: url(./Raleway-ExtraBold.ttf) format("ttf");
+    src: url(./Raleway-ExtraBold.ttf) format("ttf"),
+    url(./Raleway-ExtraBold.eot) format("eot"),
+    url(./Raleway-ExtraBold.woff) format("woff"),
+    url(./Raleway-ExtraBold.woff2) format("woff2");
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     -webkit-text-size-adjust: 100%;
@@ -55,7 +67,10 @@
     font-style: normal;
     font-weight: 700;
     font-display: swap;
-    src: url(./OpenSans-Bold.ttf) format("ttf");
+    src: url(./OpenSans-Bold.ttf) format("ttf"),
+    url(./OpenSans-Bold.eot) format("eot"),
+    url(./OpenSans-Bold.woff) format("woff"),
+    url(./OpenSans-Bold.woff2) format("woff2");
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     -webkit-text-size-adjust: 100%;
