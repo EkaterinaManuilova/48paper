@@ -198,11 +198,15 @@
   margin: 0;
   padding: 0;
   display: flex;
-  gap: 23px;
+  /* gap: 23px; */
   flex-wrap: wrap;
 }
 .header__navigation-item {
   padding: 6px 0;
+  margin-right: 23px;
+}
+.header__navigation-item:last-of-type {
+  margin-right: 0;
 }
 .header__navigation-link {
   color: #ffffff;

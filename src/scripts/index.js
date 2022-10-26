@@ -423,7 +423,7 @@ for (let i = 0; i < tabs.length; i++) {
 const productItems = [
   {
     link: "#",
-    image: "./src/images/1.png",
+    image: "././src/images/1.png",
     name: "Обрезчик углов BULROS С-004, R5",
     price: "1 276 ₽",
     oldprice: "1 576 ₽",
@@ -431,7 +431,7 @@ const productItems = [
   },
   {
     link: "#",
-    image: "./src/images/2.png",
+    image: "././src/images/2.png",
     name: "Карточный принтер Datacard SD160, односторонний",
     price: "54 850 ₽",
     oldprice: "",
@@ -439,7 +439,7 @@ const productItems = [
   },
   {
     link: "#",
-    image: "./src/images/3.png",
+    image: "././src/images/3.png",
     name: "Datacard Simplex, 100 Input hopper",
     price: "59 195 ₽",
     oldprice: "",
@@ -447,7 +447,7 @@ const productItems = [
   },
   {
     link: "#",
-    image: "./src/images/4.png",
+    image: "././src/images/4.png",
     name: "Сверло для бумаги Nagel 9 мм",
     price: "1 990 ₽",
     oldprice: "",
@@ -455,7 +455,7 @@ const productItems = [
   },
   {
     link: "#",
-    image: "./src/images/5.png",
+    image: "././src/images/5.png",
     name: "Вырубщик отверстий BULROS A-101",
     price: "679 ₽",
     oldprice: "1 576 ₽",
@@ -463,7 +463,7 @@ const productItems = [
   },
   {
     link: "#",
-    image: "./src/images/6.png",
+    image: "././src/images/6.png",
     name: "Вырубщик отверстий BULROS A-112",
     price: "1 251 ₽",
     oldprice: "",
@@ -471,7 +471,7 @@ const productItems = [
   },
   {
     link: "#",
-    image: "./src/images/7.png",
+    image: "././src/images/7.png",
     name: "Обрезчик углов BULROS С-004, R5",
     price: "1 276 ₽",
     oldprice: "1 576 ₽",
@@ -479,7 +479,7 @@ const productItems = [
   },
   {
     link: "#",
-    image: "./src/images/8.png",
+    image: "././src/images/8.png",
     name: "Карточный принтер Datacard SD160, односторонний",
     price: "54 850 ₽",
     oldprice: "",
@@ -487,7 +487,7 @@ const productItems = [
   },
   {
     link: "#",
-    image: "./src/images/9.png",
+    image: "././src/images/9.png",
     name: "Datacard Simplex, 100 Input hopper",
     price: "59 195 ₽",
     oldprice: "",

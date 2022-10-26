@@ -23,7 +23,7 @@ const headerText = `
           <div class="header__menu">
             <div class="header__menu-catalog-wrapper header__menu-item">
               <a
-                href="/src/pages/catalog.html"
+                href="./src/pages/catalog.html"
                 class="header__menu-catalog-link"
               >
                 <div class="burger-menu-icon"></div>
