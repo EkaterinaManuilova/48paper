@@ -18,7 +18,7 @@ const headerText = `
     </div>
     <div class="header__main">
       <div class="header__content">
-        <a href="../../index.html" class="logo"></a>
+        <a href="/" class="logo"></a>
         <div class="header__inner-block">
           <div class="header__menu">
             <div class="header__menu-catalog-wrapper header__menu-item">

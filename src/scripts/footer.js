@@ -2,7 +2,7 @@ const footerText = `
 <div class="footer__container">
       <div class="footer__left-block">
         <div class="footer__left">
-          <a href="../../index.html" class="logo footer__logo"></a>
+          <a href="/" class="logo footer__logo"></a>
           <div class="social">
             <div class="social__vk"></div>
             <div class="social__inst"></div>
