@@ -45,7 +45,12 @@
   }
   .social {
     display: flex;
-    column-gap: 17px;
+  }
+  .social div {
+    margin-right: 17px;
+  }
+  .social div:last-of-type {
+    margin-right: 0;
   }
   .social__vk {
     background-image: url('../images/vk.svg');
@@ -225,7 +230,7 @@
   }
   .tipografy {
     margin-top: 26px;
-    width: 157px;
+    width: 158px;
     height: 37px;
     background: #469fdc;
     border-radius: 20px;

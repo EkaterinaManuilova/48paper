@@ -75,7 +75,7 @@
 }
 .category-catalog__item {
   border-radius: 5px;
-  border: solid 1px #f7f7f7;
+  border: solid 1px transparent;
   transition: all linear 0.3s;
 }
 .category-catalog__item:hover {
@@ -93,7 +93,7 @@
 }
 .category-catalog__item-title {
   max-width: 238px;
-  text-align: center;
+  margin-left: 29px;
   font-family: "Raleway";
   text-transform: uppercase;
   font-size: 30px;
