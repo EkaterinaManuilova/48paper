@@ -149,7 +149,7 @@
   justify-content: space-between;
   flex: 1;
   position: relative;
-  margin: 27px -24px 13px;
+  margin: 27px -23px 13px;
   width: calc(100% + 48px);
 }
 @media screen and (max-width: 970px) {
